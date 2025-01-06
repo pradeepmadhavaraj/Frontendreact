@@ -1,0 +1,101 @@
+/* General Form Styling */
+form {
+  width: 100%;
+  max-width: 500px;             /* Set max width for form */
+  margin: 30px auto;            /* Center the form on the page */
+  padding: 20px;                /* Add padding inside the form */
+  background-color: #f9f9f9;    /* Light background color */
+  border-radius: 8px;           /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+/* Styling for the form heading */
+h2 {
+  text-align: center;           /* Center align the heading */
+  color: #4CAF50;               /* Green color for the heading */
+  margin-bottom: 20px;          /* Add space below the heading */
+}
+
+/* Styling for form fields (name, email, address) */
+div {
+  margin-bottom: 15px;          /* Add space between fields */
+}
+
+/* Label Styling */
+label {
+  display: block;               /* Ensure label is block-level */
+  margin-bottom: 5px;           /* Space between label and input */
+  font-weight: bold;            /* Make labels bold */
+  color: #333;                  /* Dark gray color for the label */
+}
+
+/* Input Field and Textarea Styling */
+input[type="text"], input[type="email"], textarea {
+  width: 100%;                  /* Make inputs and textarea take up full width */
+  padding: 10px;                /* Add padding inside the fields */
+  border: 1px solid #ddd;       /* Border for the fields */
+  border-radius: 5px;           /* Rounded corners */
+  font-size: 16px;              /* Set font size */
+  color: #555;                  /* Dark gray color for text */
+}
+
+textarea {
+  height: 100px;                /* Set a height for the textarea */
+  resize: vertical;             /* Allow vertical resize */
+}
+
+/* Button Styling */
+button {
+  background-color: #4CAF50;    /* Green background */
+  color: white;                 /* White text */
+  padding: 12px 20px;            /* Add padding inside the button */
+  border: none;                 /* Remove default border */
+  border-radius: 5px;           /* Rounded corners */
+  font-size: 16px;              /* Medium font size */
+  width: 100%;                  /* Make button take full width */
+  cursor: pointer;              /* Change cursor on hover */
+  transition: background-color 0.3s ease;  /* Smooth background color transition */
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #45a049;    /* Darker green on hover */
+}
+
+/* Responsive Design - Mobile-friendly */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;              /* Less padding on smaller screens */
+  }
+
+  button {
+    width: 100%;                /* Button takes full width */
+  }
+}
+.createuser h2 {
+  font-size: 24px;                
+  color: #333;                   
+  margin-bottom: 15px;            
+}
+
+.createuser button {
+  background-color: #4CAF50;      
+  color: white;                   
+  font-size: 16px;                
+  padding: 10px 20px;             
+  border: none;                   
+  border-radius: 5px;             
+  cursor: pointer;                
+  transition: background-color 0.3s ease;  
+}
+
+
+.createuser button:hover {
+  background-color: #45a049;      
+}
+
+.createuser button a {
+  color: white;                  
+  text-decoration: none;         
+}
+

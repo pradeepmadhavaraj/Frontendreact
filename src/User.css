@@ -1,0 +1,106 @@
+/* General Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;   /* Modern font for the table */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for table */
+}
+
+/* Table Header Styling */
+th {
+  background-color: #4CAF50;  /* Green background */
+  color: white;                /* White text */
+  padding: 15px 20px;          /* Larger padding for header cells */
+  text-align: left;            /* Left-align text */
+  font-size: 18px;             /* Larger text for readability */
+  font-weight: bold;           /* Make header text bold */
+  border-bottom: 2px solid #ddd;  /* Border below header */
+  text-transform: uppercase;   /* Capitalize the header text */
+}
+
+/* Table Data Cell Styling */
+td {
+  padding: 12px 20px;          /* Increased padding for data cells */
+  border: 1px solid #ddd;      /* Border for each cell */
+  text-align: left;            /* Left-align text */
+  font-size: 16px;             /* Standard text size */
+  color: #555;                 /* Slightly lighter text color */
+}
+
+/* Alternate Row Colors for Better Readability */
+tr:nth-child(even) {
+  background-color: #f9f9f9;  /* Lighter background for even rows */
+}
+
+/* Hover Effect on Rows */
+tr:hover {
+  background-color: #f1f1f1;  /* Slightly lighter gray when hovering */
+}
+
+/* Table Styling: Borders and Box Shadow */
+#userTable {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  border-radius: 8px;          /* Rounded corners for table */
+  overflow: hidden;            /* Prevents overflow for rounded corners */
+}
+
+/* Table Caption Styling (optional) */
+caption {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+  padding: 10px;
+  text-align: left;
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Styling for Table Header Row on Hover */
+th:hover {
+  background-color: #45a049;   /* Darker green on hover for header */
+}
+td:empty {
+  background-color: #f9f9f9;    
+  text-align: center;            
+  color: #bbb;                   
+}
+
+h1{
+  text-align: center;
+  color: #4CAF50;
+}
+.createuser {
+  text-align: center;             
+  margin-top: 30px;               
+  padding: 20px;                  
+ 
+}
+
+.createuser h2 {
+  font-size: 24px;                
+  color: #333;                   
+  margin-bottom: 15px;            
+}
+
+.createuser button {
+  background-color: #4CAF50;      
+  color: white;                   
+  font-size: 16px;                
+  padding: 10px 20px;             
+  border: none;                   
+  border-radius: 5px;             
+  cursor: pointer;                
+  transition: background-color 0.3s ease;  
+}
+
+
+.createuser button:hover {
+  background-color: #45a049;      
+}
+
+.createuser button a {
+  color: white;                  
+  text-decoration: none;         
+}
