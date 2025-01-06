@@ -43,7 +43,7 @@ import axios from 'axios';
                       <td>{user.name}</td>
                       <td>{user.email}</td>
                       <td>{user.address}</td>
-                      <td><button><Link to={`/update/${user.id}`}>Update user</Link></button></td>
+                      <td><button><Link to={`/update/${user._id}`}>Update user</Link></button></td>
                       <td><button onClick={()=>deleteUser(user._id)}>Delete</button></td>
                   </tr>
               )
