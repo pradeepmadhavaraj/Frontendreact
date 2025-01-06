@@ -1,101 +1,94 @@
-/* General Form Styling */
-form {
+/* General Styling for the Create User Form */
+.create-user-container {
   width: 100%;
-  max-width: 500px;             /* Set max width for form */
-  margin: 30px auto;            /* Center the form on the page */
-  padding: 20px;                /* Add padding inside the form */
-  background-color: #f9f9f9;    /* Light background color */
-  border-radius: 8px;           /* Rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+  max-width: 600px;             /* Limit the width of the form */
+  margin: 40px auto;            /* Center align the form */
+  padding: 20px;                /* Padding for the form */
+  background-color: #fff;       /* White background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for form */
+  border-radius: 8px;           /* Rounded corners for form */
 }
 
-/* Styling for the form heading */
+/* Header Styling for Create User Page */
 h2 {
-  text-align: center;           /* Center align the heading */
-  color: #4CAF50;               /* Green color for the heading */
-  margin-bottom: 20px;          /* Add space below the heading */
-}
-
-/* Styling for form fields (name, email, address) */
-div {
-  margin-bottom: 15px;          /* Add space between fields */
+  text-align: center;
+  color: #4CAF50;               /* Green color */
+  font-size: 28px;
+  margin-bottom: 30px;           /* Space below header */
 }
 
 /* Label Styling */
 label {
-  display: block;               /* Ensure label is block-level */
-  margin-bottom: 5px;           /* Space between label and input */
-  font-weight: bold;            /* Make labels bold */
-  color: #333;                  /* Dark gray color for the label */
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
 }
 
-/* Input Field and Textarea Styling */
+/* Input and Textarea Styling */
 input[type="text"], input[type="email"], textarea {
-  width: 100%;                  /* Make inputs and textarea take up full width */
-  padding: 10px;                /* Add padding inside the fields */
-  border: 1px solid #ddd;       /* Border for the fields */
-  border-radius: 5px;           /* Rounded corners */
-  font-size: 16px;              /* Set font size */
-  color: #555;                  /* Dark gray color for text */
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;           /* Space below inputs */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;        /* Ensure padding doesn't affect width */
 }
 
 textarea {
-  height: 100px;                /* Set a height for the textarea */
-  resize: vertical;             /* Allow vertical resize */
+  resize: vertical;             /* Allow vertical resize for textarea */
 }
 
 /* Button Styling */
 button {
-  background-color: #4CAF50;    /* Green background */
-  color: white;                 /* White text */
-  padding: 12px 20px;            /* Add padding inside the button */
-  border: none;                 /* Remove default border */
-  border-radius: 5px;           /* Rounded corners */
-  font-size: 16px;              /* Medium font size */
-  width: 100%;                  /* Make button take full width */
-  cursor: pointer;              /* Change cursor on hover */
-  transition: background-color 0.3s ease;  /* Smooth background color transition */
+  background-color: #4CAF50;     /* Green background */
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;                   /* Full-width button */
+  transition: background-color 0.3s ease;
 }
 
-/* Button Hover Effect */
+/* Hover Effect on Button */
 button:hover {
-  background-color: #45a049;    /* Darker green on hover */
+  background-color: #45a049;     /* Darker green on hover */
 }
 
-/* Responsive Design - Mobile-friendly */
-@media (max-width: 600px) {
-  form {
-    padding: 15px;              /* Less padding on smaller screens */
+/* Styling for Update User Button Link */
+button a {
+  color: white;                  /* White text */
+  text-decoration: none;         /* Remove underline */
+}
+
+/* Center Aligned Text for Bottom Section */
+.create-user-footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .create-user-container {
+    padding: 15px;               /* Reduce padding on smaller screens */
+  }
+
+  h2 {
+    font-size: 24px;             /* Smaller header font size */
+  }
+
+  label {
+    font-size: 14px;             /* Smaller label text */
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    font-size: 14px;             /* Smaller text input */
   }
 
   button {
-    width: 100%;                /* Button takes full width */
+    font-size: 14px;             /* Smaller button text */
   }
 }
-.createuser h2 {
-  font-size: 24px;                
-  color: #333;                   
-  margin-bottom: 15px;            
-}
-
-.createuser button {
-  background-color: #4CAF50;      
-  color: white;                   
-  font-size: 16px;                
-  padding: 10px 20px;             
-  border: none;                   
-  border-radius: 5px;             
-  cursor: pointer;                
-  transition: background-color 0.3s ease;  
-}
-
-
-.createuser button:hover {
-  background-color: #45a049;      
-}
-
-.createuser button a {
-  color: white;                  
-  text-decoration: none;         
-}
-

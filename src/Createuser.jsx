@@ -1,4 +1,4 @@
-import { Link, useNavigate  } from 'react-router-dom';
+import { useNavigate  } from 'react-router-dom';
 import './Createuser.css';
 import { useState } from 'react';
 import axios from 'axios';
@@ -63,13 +63,6 @@ const Createuser = () => {
 
           <button type="submit">Create User</button>
         </form>
-      </div>
-
-      <div>
-        <h2>Click the button to add user</h2>
-        <Link to='/update'>
-          <button>Update User</button>
-        </Link>
       </div>
     </>
   );
